@@ -34,17 +34,18 @@
 	<header class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
 		<div class="flex items-center gap-2">
 			<!-- Logo Icon -->
-			<div class="text-blue-600">
-				<svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-					<path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM12 22C10.9 22 10 21.1 10 20C10 18.9 10.9 18 12 18C13.1 18 14 18.9 14 20C14 21.1 13.1 22 12 22ZM6 12C6 10.9 5.1 10 4 10C2.9 10 2 10.9 2 12C2 13.1 2.9 14 4 14C5.1 14 6 13.1 6 12ZM22 12C22 13.1 21.1 14 20 14C18.9 14 18 13.1 18 12C18 10.9 18.9 10 20 10C21.1 10 22 10.9 22 12ZM17.66 7.34C18.44 6.56 19.7 6.56 20.48 7.34C21.26 8.12 21.26 9.38 20.48 10.16C19.7 10.94 18.44 10.94 17.66 10.16C16.88 9.38 16.88 8.12 17.66 7.34ZM6.34 16.66C5.56 17.44 4.3 17.44 3.52 16.66C2.74 15.88 2.74 14.62 3.52 13.84C4.3 13.06 5.56 13.06 6.34 13.84C7.12 14.62 7.12 15.88 6.34 16.66ZM16.66 17.66C15.88 18.44 15.88 19.7 16.66 20.48C17.44 21.26 18.7 21.26 19.48 20.48C20.26 19.7 20.26 18.44 19.48 17.66C18.7 16.88 18.7 15.62 17.92 14.84L16.66 17.66ZM7.34 6.34C8.12 5.56 8.12 4.3 7.34 3.52C6.56 2.74 5.3 2.74 4.52 3.52C3.74 4.3 3.74 5.56 4.52 6.34C5.3 7.12 6.56 7.12 7.34 6.34Z" />
-					<circle cx="12" cy="12" r="3" class="text-blue-500" />
+			<div class="text-primary-600">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+					<circle cx="12" cy="12" r="10"/>
+					<path d="M12 2v20M2 12h20"/>
+					<circle cx="12" cy="12" r="3" fill="currentColor"/>
 				</svg>
 			</div>
-			<span class="font-bold text-xl tracking-tight">Distill</span>
+			<span class="font-bold text-xl tracking-tight">Atlas Core</span>
 		</div>
 		<nav class="flex items-center gap-6 text-sm font-medium">
-			<a href="#" class="text-gray-600 hover:text-gray-900">Guide</a>
-			<a href="#" class="bg-gray-100 px-4 py-2 rounded-lg text-gray-900 hover:bg-gray-200 transition-colors">Login</a>
+			<a href="#" class="text-gray-600 hover:text-gray-900">Documentation</a>
+			<a href="#" class="bg-gray-100 px-4 py-2 rounded-lg text-gray-900 hover:bg-gray-200 transition-colors">Get Started</a>
 		</nav>
 	</header>
 
@@ -53,30 +54,30 @@
 		<section class="max-w-4xl mx-auto px-6 pt-12 pb-20 text-center">
 			<div class="inline-flex items-center gap-2 text-gray-500 text-sm mb-6">
 				{@html icons.clock}
-				<span>For macOS & iOS</span>
+				<span>AI-Powered Knowledge Capture</span>
 			</div>
 			
 			<h1 class="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6 leading-[1.1]">
-				Capture once. Distill forever.
+				Capture tribal knowledge. Find it instantly.
 			</h1>
 			
 			<p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-				The insight-to-action loop for people who think for a living.
+				Screen recording and AI-powered search that turns your team's expertise into searchable, actionable knowledge.
 			</p>
 
 			<div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-16">
 				<div class="relative w-full">
 					<input 
 						type="email" 
-						placeholder="Your email address" 
-						class="w-full pl-4 pr-12 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
+						placeholder="Your work email" 
+						class="w-full pl-4 pr-12 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
 					/>
 					<button class="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-gray-400 hover:text-gray-600">
 						{@html icons.arrowRight}
 					</button>
 				</div>
 				<div class="text-xs text-left text-gray-500 w-full sm:w-auto shrink-0">
-					Request an invitation,<br>Distill is in limited access.
+					Start your free trial,<br>No credit card required.
 				</div>
 			</div>
 
@@ -122,48 +123,50 @@
 			<!-- Bottom Icons -->
 			<div class="flex flex-wrap justify-center gap-8 md:gap-12 text-sm font-medium text-gray-700">
 				<div class="flex items-center gap-2">
-					{@html icons.reflection}
-					<span>For reflection</span>
+					{@html icons.camera}
+					<span>Screen Recording</span>
 				</div>
 				<div class="flex items-center gap-2">
-					{@html icons.productivity}
-					<span>For productivity</span>
+					{@html icons.search}
+					<span>AI Search</span>
 				</div>
 				<div class="flex items-center gap-2">
 					{@html icons.memory}
-					<span>For memory</span>
+					<span>Knowledge Base</span>
 				</div>
 				<div class="flex items-center gap-2">
-					{@html icons.clarity}
-					<span>For clarity</span>
+					{@html icons.shield}
+					<span>Compliance Ready</span>
 				</div>
 			</div>
+		</section>
+
 		<!-- Features Grid -->
 		<section class="max-w-6xl mx-auto px-6 py-20">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 max-w-lg leading-tight">
-				Great ideas start in quiet places, welcome to your private think space.
+				Stop losing critical knowledge. Start building your team's intelligence layer.
 			</h2>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 				<!-- Card 1 -->
 				<div class="bg-gray-50 p-8 rounded-2xl flex flex-col items-start h-64">
 					<div class="mb-auto text-gray-900">
-						{@html icons.speedometer}
+						{@html icons.camera}
 					</div>
 					<div>
-						<h3 class="font-bold text-lg mb-2 text-gray-900">Built for flow</h3>
-						<p class="text-sm text-gray-600 leading-relaxed">Fast, modern mobile and desktop apps that work offline</p>
+						<h3 class="font-bold text-lg mb-2 text-gray-900">Instant Recording</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">Capture screens, meetings, and workflows with one click</p>
 					</div>
 				</div>
 
 				<!-- Card 2 -->
 				<div class="bg-gray-50 p-8 rounded-2xl flex flex-col items-start h-64">
 					<div class="mb-auto text-gray-900">
-						{@html icons.shield}
+						{@html icons.search}
 					</div>
 					<div>
-						<h3 class="font-bold text-lg mb-2 text-gray-900">Private by design</h3>
-						<p class="text-sm text-gray-600 leading-relaxed">Stored on your device and syncs with end-to-end encryption</p>
+						<h3 class="font-bold text-lg mb-2 text-gray-900">AI-Powered Search</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">Find any moment, conversation, or decision in seconds</p>
 					</div>
 				</div>
 
@@ -173,115 +176,122 @@
 						{@html icons.sparkles}
 					</div>
 					<div>
-						<h3 class="font-bold text-lg mb-2 text-gray-900">Works with AI</h3>
-						<p class="text-sm text-gray-600 leading-relaxed">Intelligent agents that think with you and organize your vault</p>
+						<h3 class="font-bold text-lg mb-2 text-gray-900">Smart Insights</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">AI extracts key decisions, action items, and patterns</p>
 					</div>
 				</div>
 
 				<!-- Card 4 -->
 				<div class="bg-gray-50 p-8 rounded-2xl flex flex-col items-start h-64">
 					<div class="mb-auto text-gray-900">
-						{@html icons.soundwave}
+						{@html icons.shield}
 					</div>
 					<div>
-						<h3 class="font-bold text-lg mb-2 text-gray-900">Speak to journal</h3>
-						<p class="text-sm text-gray-600 leading-relaxed">Dictate your ideas and thoughts effortlessly</p>
+						<h3 class="font-bold text-lg mb-2 text-gray-900">Compliance Built-In</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">Automated workflows meet regulatory requirements</p>
 					</div>
 				</div>
 
 				<!-- Card 5 -->
 				<div class="bg-gray-50 p-8 rounded-2xl flex flex-col items-start h-64">
 					<div class="mb-auto text-gray-900">
-						{@html icons.plus}
+						{@html icons.speedometer}
 					</div>
 					<div>
-						<h3 class="font-bold text-lg mb-2 text-gray-900">Capture effortlessly</h3>
-						<p class="text-sm text-gray-600 leading-relaxed">Text, links, photos, screenshots, and more</p>
+						<h3 class="font-bold text-lg mb-2 text-gray-900">Fast Integration</h3>
+						<p class="text-sm text-gray-600 leading-relaxed">Plug-and-play setup, works with your existing tools</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Think Tank Section -->
+		<!-- AI Search Section -->
 		<section class="max-w-6xl mx-auto px-6 py-20">
 			<div class="mb-16">
-				<span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
-					With best-in-class AI
+				<span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
+					Powered by AI
 				</span>
-				<h2 class="text-4xl md:text-5xl font-bold text-purple-900 mb-6 tracking-tight">
-					Your personal think tank
+				<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+					Search like you think
 				</h2>
 				<p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
-					Intelligent agents that organize and enhance your thinking. Your intellectual force multiplier.
+					Natural language search that understands context. Find the exact moment, decision, or conversation you need.
 				</p>
 			</div>
 
-			<div class="bg-purple-50 rounded-3xl p-8 md:p-12 mb-16">
+			<div class="bg-primary-50 rounded-3xl p-8 md:p-12 mb-16">
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-					<!-- Left Visual: Nova Agent -->
+					<!-- Left Visual: Search Interface -->
 					<div class="relative bg-white rounded-2xl shadow-lg p-6 overflow-hidden min-h-[300px]">
-						<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+						<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-primary-600"></div>
 						<div class="flex items-center gap-3 mb-6">
-							<div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 to-orange-400 flex items-center justify-center text-white font-bold text-xs">
-								N
+							<div class="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white">
+								{@html icons.search}
 							</div>
 							<div>
-								<div class="font-bold text-gray-900">Nova</div>
-								<div class="text-xs text-purple-600 font-medium uppercase tracking-wider">The Playful Explorer</div>
+								<div class="font-bold text-gray-900">Search Query</div>
+								<div class="text-xs text-primary-600 font-medium uppercase tracking-wider">Natural Language</div>
 							</div>
 						</div>
 						<div class="space-y-4 text-sm">
-							<div class="bg-purple-50 p-4 rounded-xl rounded-tl-none text-gray-800">
-								I approach life like one big fascinating experiment, asking "what if" questions that make people see things in completely new ways. I believe play and humor are powerful tools for breaking through mental barriers.
+							<div class="bg-gray-50 p-4 rounded-xl text-gray-800 border border-gray-200">
+								<p class="font-medium mb-2">"Show me when Sarah explained the new deployment process"</p>
 							</div>
-							<div class="flex gap-2">
-								<span class="bg-purple-900 text-white px-3 py-1 rounded-full text-xs font-medium">Extraverted</span>
-								<span class="bg-purple-900 text-white px-3 py-1 rounded-full text-xs font-medium">Intuitive</span>
-							</div>
-							<div class="flex gap-2">
-								<span class="bg-purple-900 text-white px-3 py-1 rounded-full text-xs font-medium">Thinking</span>
-								<span class="bg-purple-900 text-white px-3 py-1 rounded-full text-xs font-medium">Perceiving</span>
+							<div class="space-y-2">
+								<div class="flex items-center gap-2 text-xs text-gray-600">
+									<div class="w-2 h-2 rounded-full bg-primary-500"></div>
+									<span>Found in 3 recordings</span>
+								</div>
+								<div class="flex items-center gap-2 text-xs text-gray-600">
+									<div class="w-2 h-2 rounded-full bg-primary-500"></div>
+									<span>2 team meetings, 1 demo session</span>
+								</div>
+								<div class="flex items-center gap-2 text-xs text-gray-600">
+									<div class="w-2 h-2 rounded-full bg-primary-500"></div>
+									<span>Extracted 5 action items</span>
+								</div>
 							</div>
 						</div>
 						<div class="mt-6">
-							<button class="w-full py-2 border border-purple-200 text-purple-700 font-medium rounded-lg hover:bg-purple-50 transition-colors">
-								Add to vault
+							<button class="w-full py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
+								View Results
 							</button>
 						</div>
 					</div>
 
-					<!-- Right Visual: Chat Interface -->
+					<!-- Right Visual: Results Interface -->
 					<div class="bg-white rounded-2xl shadow-lg p-6 min-h-[300px] flex flex-col">
-						<div class="flex items-center gap-2 mb-4 text-xs text-gray-400 border-b border-gray-100 pb-2 overflow-hidden whitespace-nowrap">
-							<div class="w-2 h-2 rounded-full bg-gray-300"></div>
-							<span>https://nabeelqu.substack.com/p/reflections-on-palantir</span>
+						<div class="flex items-center gap-2 mb-4 text-xs text-gray-400 border-b border-gray-100 pb-2">
+							<div class="w-2 h-2 rounded-full bg-primary-500"></div>
+							<span>3 results found in 0.3s</span>
 						</div>
 						<div class="flex-1 space-y-4">
-							<div class="border border-gray-100 rounded-lg p-4">
-								<h4 class="font-bold text-gray-900 text-sm mb-1">Reflections on Palantir</h4>
-								<div class="text-xs text-gray-500 mb-2">nabeelqu.substack.com</div>
-								<p class="text-xs text-gray-600 line-clamp-3">
-									Chronos shares five on-site stories—from mapping Afghan IEDs to fixing Airbus delays—that show Palantir teams hacking bespoke fixes, then baking them into reusable Foundry modules.
-								</p>
-							</div>
-							<div class="flex gap-2 items-center text-xs text-gray-500">
-								<div class="flex -space-x-2">
-									<div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white"></div>
-									<div class="w-6 h-6 rounded-full bg-gray-300 border-2 border-white"></div>
-								</div>
-								<span>Lens and Chronos</span>
-							</div>
-							<div class="space-y-3 pt-2">
-								<div class="flex gap-3">
-									<div class="w-6 h-6 rounded-full bg-gray-800 shrink-0"></div>
-									<div class="text-xs text-gray-800">
-										<p class="font-bold mb-1">tell me everything about rene descartes</p>
+							<div class="border border-gray-100 rounded-lg p-4 hover:border-primary-200 transition-colors cursor-pointer">
+								<div class="flex items-center gap-2 mb-2">
+									<div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600">
+										{@html icons.camera}
+									</div>
+									<div>
+										<h4 class="font-bold text-gray-900 text-sm">Team Standup - Dec 15</h4>
+										<div class="text-xs text-gray-500">14:23 - 16:45</div>
 									</div>
 								</div>
-								<div class="flex gap-3">
-									<div class="w-6 h-6 rounded-full bg-teal-500 shrink-0"></div>
-									<div class="text-xs text-gray-600 bg-gray-50 p-3 rounded-lg rounded-tl-none">
-										<p>AI for physical action: doubt filter, cogito reset, clarify rewrite, first-principles ladder, axis plotting, mind-body separation.</p>
+								<p class="text-xs text-gray-600">
+									Sarah walks through the new CI/CD pipeline setup, explaining how to deploy to staging and production environments...
+								</p>
+								<div class="flex gap-2 mt-3">
+									<span class="bg-primary-100 text-primary-700 px-2 py-1 rounded text-xs font-medium">deployment</span>
+									<span class="bg-primary-100 text-primary-700 px-2 py-1 rounded text-xs font-medium">devops</span>
+								</div>
+							</div>
+							<div class="border border-gray-100 rounded-lg p-4 opacity-60">
+								<div class="flex items-center gap-2 mb-2">
+									<div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600">
+										{@html icons.camera}
+									</div>
+									<div>
+										<h4 class="font-bold text-gray-900 text-sm">Product Demo - Dec 12</h4>
+										<div class="text-xs text-gray-500">09:15 - 10:30</div>
 									</div>
 								</div>
 							</div>
@@ -289,47 +299,49 @@
 					</div>
 				</div>
 
-				<!-- Bottom Visual: Input Processing -->
+				<!-- Bottom Visual: Recording Processing -->
 				<div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
 					<div class="relative mb-8">
-						<input type="text" value="What are you thinking?" class="w-full bg-gray-50 border-none rounded-xl py-4 pl-12 pr-4 text-gray-500 focus:ring-0" readonly />
-						<div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+						<div class="w-full bg-gray-50 border-none rounded-xl py-4 pl-12 pr-4 text-gray-700 font-medium">
+							Recording: Product Strategy Meeting
+						</div>
+						<div class="absolute left-4 top-1/2 -translate-y-1/2 text-primary-600">
 							{@html icons.camera}
 						</div>
 						<div class="absolute right-4 top-1/2 -translate-y-1/2 flex gap-2 text-gray-400">
-							{@html icons.mic}
-							{@html icons.download}
+							<div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+							<span class="text-xs font-medium text-gray-600">45:23</span>
 						</div>
 					</div>
 
 					<div class="flex justify-center mb-8">
-						<span class="bg-gray-100 text-gray-500 text-xs px-3 py-1 rounded-full">gpt-5 is out! should we switch you to it?</span>
+						<span class="bg-primary-100 text-primary-700 text-xs px-3 py-1 rounded-full font-medium">Processing with AI</span>
 					</div>
 
-					<div class="bg-purple-50/50 rounded-xl p-6 border border-purple-100">
+					<div class="bg-primary-50/50 rounded-xl p-6 border border-primary-100">
 						<div class="space-y-3">
 							<div class="flex items-center gap-3">
-								<div class="w-3 h-3 rounded-full bg-pink-500 animate-pulse"></div>
-								<span class="text-sm text-gray-700">Nova is working</span>
+								<div class="w-3 h-3 rounded-full bg-primary-500 animate-pulse"></div>
+								<span class="text-sm text-gray-700">Transcribing audio</span>
 							</div>
 							<div class="flex items-start gap-3">
 								<div class="w-3 h-3 rounded-full bg-green-500 mt-1"></div>
 								<div class="text-sm text-gray-700">
-									<span class="font-medium">Nova is scanning</span> 
-									<span class="font-bold bg-white px-1 rounded border border-gray-200 mx-1">132 recent entries</span> 
-									to understand your context and checking 
-									<span class="font-bold bg-white px-1 rounded border border-gray-200 mx-1">8 lists</span> 
-									for relevant topics.
-									<p class="text-xs text-gray-500 mt-1 max-w-md">Found mentions of ChatGPT in your vault for additional context. Distill is using AI to analyze patterns and suggest relevant connections.</p>
+									<span class="font-medium">Extracted</span> 
+									<span class="font-bold bg-white px-1 rounded border border-gray-200 mx-1">12 action items</span> 
+									and identified 
+									<span class="font-bold bg-white px-1 rounded border border-gray-200 mx-1">3 key decisions</span> 
+									from the discussion.
+									<p class="text-xs text-gray-500 mt-1 max-w-md">AI detected mentions of Q4 roadmap, feature prioritization, and customer feedback themes.</p>
 								</div>
 							</div>
 							<div class="flex items-center gap-3">
 								<div class="w-3 h-3 rounded-full bg-green-500"></div>
-								<span class="text-sm text-gray-700">Added entry to <span class="bg-purple-500 text-white px-2 py-0.5 rounded text-xs font-bold">ideas</span></span>
+								<span class="text-sm text-gray-700">Tagged with <span class="bg-primary-600 text-white px-2 py-0.5 rounded text-xs font-bold">strategy</span> <span class="bg-primary-600 text-white px-2 py-0.5 rounded text-xs font-bold">product</span></span>
 							</div>
 							<div class="flex items-center gap-3">
 								<div class="w-3 h-3 rounded-full border-2 border-gray-300 border-t-gray-500 animate-spin"></div>
-								<span class="text-sm text-gray-500">Searching the web for <span class="text-blue-500">openai gpt-5</span></span>
+								<span class="text-sm text-gray-500">Indexing for search...</span>
 							</div>
 						</div>
 					</div>
@@ -338,102 +350,105 @@
 
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 max-w-4xl">
 				<p class="text-xl text-gray-600 mb-6 md:col-span-2 leading-relaxed">
-					They watch your threads, spot patterns, and do the groundwork you don't have time for—mapping connections, organizing lists, and surfacing the right context on cue.
+					AI understands context, extracts insights, and surfaces exactly what you need—turning hours of recordings into searchable, actionable knowledge.
 				</p>
 				
 				<div class="space-y-4">
-					<div class="flex items-center gap-3 text-purple-800 font-medium">
+					<div class="flex items-center gap-3 text-primary-700 font-medium">
 						{@html icons.sparkles}
-						<span>Agents engage with you</span>
+						<span>Automatic transcription</span>
 					</div>
-					<div class="flex items-center gap-3 text-purple-800 font-medium">
+					<div class="flex items-center gap-3 text-primary-700 font-medium">
 						{@html icons.target}
-						<span>Guide you towards your goals</span>
+						<span>Extract action items</span>
 					</div>
-					<div class="flex items-center gap-3 text-purple-800 font-medium">
+					<div class="flex items-center gap-3 text-primary-700 font-medium">
 						{@html icons.plus}
-						<span>Auto-organize entries into lists</span>
+						<span>Smart tagging & categorization</span>
 					</div>
 				</div>
 
 				<div class="space-y-4">
-					<div class="flex items-center gap-3 text-purple-800 font-medium">
+					<div class="flex items-center gap-3 text-primary-700 font-medium">
 						{@html icons.layout}
-						<span>Connect the dots across threads</span>
+						<span>Connect related recordings</span>
 					</div>
-					<div class="flex items-center gap-3 text-purple-800 font-medium">
+					<div class="flex items-center gap-3 text-primary-700 font-medium">
 						{@html icons.maximize}
-						<span>Read and summarize links</span>
+						<span>Summarize key decisions</span>
 					</div>
-					<div class="flex items-center gap-3 text-purple-800 font-medium">
-						{@html icons.externalLink}
-						<span>Sees your screenshots</span>
+					<div class="flex items-center gap-3 text-primary-700 font-medium">
+						{@html icons.search}
+						<span>Semantic search across all content</span>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Insights to Action Section -->
+		<!-- Workflows Section -->
 		<section class="max-w-6xl mx-auto px-6 py-20">
 			<div class="mb-16">
-				<span class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
-					Planner
+				<span class="inline-block bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
+					Automation
 				</span>
-				<h2 class="text-4xl md:text-5xl font-bold text-orange-900 mb-6 tracking-tight">
-					From insights to action
+				<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+					Workflows that scale
 				</h2>
 				<p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
-					Agents help you break plans down, manage todos, and keep everything moving.
+					Automated compliance workflows, quality checks, and knowledge distribution—built for teams that need to move fast.
 				</p>
 			</div>
 
-			<div class="bg-orange-50 rounded-3xl p-8 md:p-12 mb-16">
+			<div class="bg-gray-50 rounded-3xl p-8 md:p-12 mb-16">
 				<div class="bg-white rounded-2xl shadow-sm p-6 md:p-8 max-w-3xl mx-auto">
 					<!-- Stats -->
 					<div class="grid grid-cols-4 gap-4 mb-8">
+						<div class="bg-primary-100 p-3 rounded-xl">
+							<div class="text-xs font-bold text-primary-800 mb-1">Active</div>
+							<div class="text-2xl font-bold text-primary-900">24</div>
+						</div>
 						<div class="bg-green-100 p-3 rounded-xl">
-							<div class="text-xs font-bold text-green-800 mb-1">Today</div>
-							<div class="text-2xl font-bold text-green-900">5</div>
-						</div>
-						<div class="bg-orange-100 p-3 rounded-xl">
-							<div class="text-xs font-bold text-orange-800 mb-1">Scheduled</div>
-							<div class="text-2xl font-bold text-orange-900">51</div>
+							<div class="text-xs font-bold text-green-800 mb-1">Completed</div>
+							<div class="text-2xl font-bold text-green-900">156</div>
 						</div>
 						<div class="bg-gray-100 p-3 rounded-xl">
-							<div class="text-xs font-bold text-gray-600 mb-1">All</div>
-							<div class="text-2xl font-bold text-gray-900">56</div>
+							<div class="text-xs font-bold text-gray-600 mb-1">Pending</div>
+							<div class="text-2xl font-bold text-gray-900">8</div>
 						</div>
 						<div class="bg-gray-100 p-3 rounded-xl">
-							<div class="text-xs font-bold text-gray-600 mb-1">Completed</div>
-							<div class="text-2xl font-bold text-gray-900">70</div>
+							<div class="text-xs font-bold text-gray-600 mb-1">Total</div>
+							<div class="text-2xl font-bold text-gray-900">188</div>
 						</div>
 					</div>
 
-					<!-- Task List -->
+					<!-- Workflow List -->
 					<div class="space-y-6">
 						<div>
-							<div class="text-xs font-bold text-red-500 mb-2 tracking-wide">OVERDUE</div>
+							<div class="text-xs font-bold text-primary-600 mb-2 tracking-wide">ACTIVE WORKFLOWS</div>
 							<div class="flex gap-4 items-start group">
-								<div class="mt-1 w-5 h-5 rounded-full border-2 border-red-500 flex items-center justify-center cursor-pointer"></div>
+								<div class="mt-1 w-5 h-5 rounded-full border-2 border-primary-500 flex items-center justify-center cursor-pointer">
+									<div class="w-2 h-2 rounded-full bg-primary-500"></div>
+								</div>
 								<div class="flex-1">
-									<h4 class="font-bold text-gray-900">Review quarterly budget report</h4>
-									<p class="text-xs text-gray-500 mt-1">Review and provide feedback on the Q4 budget analysis prepared by the finance team.</p>
-									<div class="text-xs text-red-500 mt-1 font-medium">YESTERDAY · 2:00 PM</div>
+									<h4 class="font-bold text-gray-900">SOC 2 Compliance Review</h4>
+									<p class="text-xs text-gray-500 mt-1">Automated audit trail generation for all system access and changes. Next review in 3 days.</p>
+									<div class="text-xs text-primary-600 mt-1 font-medium">IN PROGRESS · 87% COMPLETE</div>
 								</div>
 							</div>
 						</div>
 
 						<div>
-							<div class="text-xs font-bold text-red-500 mb-2 tracking-wide">TODAY</div>
 							<div class="flex gap-4 items-start group">
-								<div class="mt-1 w-5 h-5 rounded-full border-2 border-gray-300 group-hover:border-gray-400 cursor-pointer"></div>
+								<div class="mt-1 w-5 h-5 rounded-full border-2 border-primary-500 group-hover:border-primary-600 cursor-pointer">
+									<div class="w-2 h-2 rounded-full bg-primary-500 ml-0.5 mt-0.5"></div>
+								</div>
 								<div class="flex-1">
-									<h4 class="font-bold text-gray-900">40-min Zone-2 jog / easy spin</h4>
-									<p class="text-xs text-gray-500 mt-1">Perform a 40-minute Zone-2 jog or easy spin. Maintain a pace where you can converse in full sentences.</p>
+									<h4 class="font-bold text-gray-900">Onboarding Knowledge Transfer</h4>
+									<p class="text-xs text-gray-500 mt-1">Automatically share relevant recordings with new team members based on their role.</p>
 									<div class="flex gap-2 text-xs text-gray-400 mt-1">
-										<span>TODAY · 06:00 AM</span>
+										<span>3 NEW MEMBERS</span>
 										<span>•</span>
-										<span class="flex items-center gap-1">{@html icons.repeat} REPEATS WEEKLY</span>
+										<span class="flex items-center gap-1">{@html icons.repeat} AUTOMATED</span>
 									</div>
 								</div>
 							</div>
@@ -441,29 +456,31 @@
 
 						<div>
 							<div class="flex gap-4 items-start group">
-								<div class="mt-1 w-5 h-5 rounded-full border-2 border-blue-500 cursor-pointer"></div>
+								<div class="mt-1 w-5 h-5 rounded-full border-2 border-green-500 cursor-pointer">
+									{@html icons.check}
+								</div>
 								<div class="flex-1">
-									<h4 class="font-bold text-gray-900">Team standup meeting</h4>
-									<p class="text-xs text-gray-500 mt-1">Daily sync with the team to discuss progress and blockers.</p>
-									<div class="text-xs text-gray-400 mt-1">TODAY · 9:00 AM</div>
+									<h4 class="font-bold text-gray-900">Weekly Team Sync Distribution</h4>
+									<p class="text-xs text-gray-500 mt-1">Summaries and action items sent to all stakeholders automatically.</p>
+									<div class="text-xs text-green-600 mt-1 font-medium">COMPLETED · SENT TO 12 PEOPLE</div>
 								</div>
 							</div>
 						</div>
 
 						<div>
-							<div class="text-xs font-bold text-gray-400 mb-2 tracking-wide">NO DUE DATE</div>
+							<div class="text-xs font-bold text-gray-400 mb-2 tracking-wide">SCHEDULED</div>
 							<div class="space-y-3 opacity-60">
 								<div class="flex gap-4 items-center">
 									<div class="w-5 h-5 rounded-full border-2 border-gray-300"></div>
-									<span class="text-sm text-gray-600">Draft the first cut — 90-min rough draft block</span>
+									<span class="text-sm text-gray-600">Monthly compliance report generation</span>
 								</div>
 								<div class="flex gap-4 items-center">
 									<div class="w-5 h-5 rounded-full border-2 border-gray-300"></div>
-									<span class="text-sm text-gray-600">Feedback loop — sit with Alex and refine the draft</span>
+									<span class="text-sm text-gray-600">Quarterly knowledge base cleanup</span>
 								</div>
 								<div class="flex gap-4 items-center">
 									<div class="w-5 h-5 rounded-full border-2 border-gray-300"></div>
-									<span class="text-sm text-gray-600">Badminton practice</span>
+									<span class="text-sm text-gray-600">Customer demo recording archive</span>
 								</div>
 							</div>
 						</div>
@@ -474,95 +491,95 @@
 			<div class="flex flex-col md:flex-row gap-8 md:items-start justify-between">
 				<div class="flex gap-6 text-sm font-medium text-gray-600">
 					<div class="flex items-center gap-2">
-						{@html icons.check}
-						<span>Checklists</span>
-					</div>
-					<div class="flex items-center gap-2">
-						{@html icons.calendar}
-						<span>Scheduled events</span>
+						{@html icons.shield}
+						<span>Compliance</span>
 					</div>
 					<div class="flex items-center gap-2">
 						{@html icons.repeat}
-						<span>Repeating tasks</span>
+						<span>Automation</span>
+					</div>
+					<div class="flex items-center gap-2">
+						{@html icons.check}
+						<span>Quality Checks</span>
 					</div>
 				</div>
 				<p class="text-xl text-gray-600 max-w-lg leading-relaxed">
-					Capture an idea, sketch a plan, or think out loud—your agents turn it into an actionable roadmap without disrupting your flow.
+					Set it once, let it run forever. Automated workflows ensure compliance, distribute knowledge, and keep your team aligned—without manual effort.
 				</p>
 			</div>
 		</section>
 
-		<!-- Who uses it Section -->
+		<!-- Use Cases Section -->
 		<section class="max-w-7xl mx-auto px-6 py-20">
 			<div class="mb-16">
 				<span class="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
 					Use cases
 				</span>
 				<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-					Who uses it?
+					Built for teams that move fast
 				</h2>
 				<p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
-					Distill works for anyone who needs to keep their best thinking alive- from executives to researchers to creators.
+					From early-stage startups to manufacturing operations, Atlas Core captures the knowledge that keeps your team aligned and moving forward.
 				</p>
 			</div>
 
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 				<!-- Card 1 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Decision logging</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Record key choices and the reasoning behind them, so you can revisit the "why" at any time.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Product Validation</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Capture customer interviews and user testing sessions to validate features before building.</p>
 				</div>
 				<!-- Card 2 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Idea tracking</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Capture sparks of inspiration before they fade and connect them to ongoing work.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Team Onboarding</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">New hires search past recordings to learn processes, decisions, and tribal knowledge.</p>
 				</div>
 				<!-- Card 3 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Weekly reviews</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Reflect on the past week's shifts, wins, and challenges to plan your next moves.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Compliance Audits</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Automated audit trails for SOC 2, ISO, and regulatory requirements.</p>
 				</div>
 				<!-- Card 4 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Story building</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Develop narratives or arguments over time by adding and refining entries in a thread.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Process Documentation</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Record workflows once, search and share them forever—no manual documentation needed.</p>
 				</div>
 
 				<!-- Card 5 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Progress tracking</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Keep a living record of milestones, blockers, and updates across projects.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Manufacturing Operations</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Capture equipment setup, troubleshooting, and quality control procedures.</p>
 				</div>
 				<!-- Card 6 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Goal setting</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Define clear objectives and keep them visible as your work evolves.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Customer Support</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Record solutions to complex issues and make them searchable for the entire team.</p>
 				</div>
 				<!-- Card 7 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Action planning</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Turn insights and ideas into a prioritized list of next steps.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Sales Enablement</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Share winning demos and objection handling techniques across the sales team.</p>
 				</div>
 				<!-- Card 8 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Strategy reviews</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Assess current direction by surfacing shifts, risks, and opportunities.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Engineering Handoffs</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Capture technical decisions and architecture discussions for future reference.</p>
 				</div>
 
 				<!-- Card 9 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Research synthesis</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Convert scattered findings into clear, connected insights.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Training Programs</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Build a library of training materials from real work sessions and expert knowledge.</p>
 				</div>
 				<!-- Card 10 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Meeting prep</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Walk into discussions with the relevant context and decisions at hand.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Quality Assurance</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Document testing procedures and bug reproduction steps with video evidence.</p>
 				</div>
 				<!-- Card 11 -->
 				<div class="bg-gray-100 p-6 rounded-xl min-h-[200px] flex flex-col">
-					<h3 class="font-bold text-gray-900 mb-2">Content outlining</h3>
-					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Shape captured thoughts into structured drafts for writing or presentations.</p>
+					<h3 class="font-bold text-gray-900 mb-2">Remote Collaboration</h3>
+					<p class="text-xs text-gray-600 mt-auto leading-relaxed">Async knowledge sharing for distributed teams across time zones.</p>
 				</div>
 			</div>
 		</section>
@@ -574,19 +591,19 @@
 					<h4 class="font-bold text-sm text-gray-900 mb-4">Resources</h4>
 					<div class="grid grid-cols-2 gap-x-8 gap-y-3 text-xs text-gray-600">
 						<a href="#" class="flex items-center gap-2 hover:text-gray-900">
-							{@html icons.sparkles} The augmented thinker
+							{@html icons.sparkles} Getting Started Guide
 						</a>
 						<a href="#" class="flex items-center gap-2 hover:text-gray-900">
-							{@html icons.plus} Getting started with Distill
+							{@html icons.shield} Compliance Documentation
 						</a>
 						<a href="#" class="flex items-center gap-2 hover:text-gray-900">
-							{@html icons.download} Import to Distill
+							{@html icons.download} API Reference
 						</a>
 						<a href="#" class="flex items-center gap-2 hover:text-gray-900">
-							{@html icons.target} Make your own agents
+							{@html icons.target} Integration Guides
 						</a>
 						<a href="#" class="flex items-center gap-2 hover:text-gray-900">
-							{@html icons.reflection} Building a journaling habit
+							{@html icons.search} Best Practices
 						</a>
 					</div>
 				</div>
@@ -594,18 +611,20 @@
 
 			<div class="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 text-xs text-gray-400">
 				<div class="flex items-center gap-2 mb-4 md:mb-0">
-					<div class="w-6 h-6 text-gray-300">
-						<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full">
-							<path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM12 22C10.9 22 10 21.1 10 20C10 18.9 10.9 18 12 18C13.1 18 14 18.9 14 20C14 21.1 13.1 22 12 22ZM6 12C6 10.9 5.1 10 4 10C2.9 10 2 10.9 2 12C2 13.1 2.9 14 4 14C5.1 14 6 13.1 6 12ZM22 12C22 13.1 21.1 14 20 14C18.9 14 18 13.1 18 12C18 10.9 18.9 10 20 10C21.1 10 22 10.9 22 12ZM17.66 7.34C18.44 6.56 19.7 6.56 20.48 7.34C21.26 8.12 21.26 9.38 20.48 10.16C19.7 10.94 18.44 10.94 17.66 10.16C16.88 9.38 16.88 8.12 17.66 7.34ZM6.34 16.66C5.56 17.44 4.3 17.44 3.52 16.66C2.74 15.88 2.74 14.62 3.52 13.84C4.3 13.06 5.56 13.06 6.34 13.84C7.12 14.62 7.12 15.88 6.34 16.66ZM16.66 17.66C15.88 18.44 15.88 19.7 16.66 20.48C17.44 21.26 18.7 21.26 19.48 20.48C20.26 19.7 20.26 18.44 19.48 17.66C18.7 16.88 18.7 15.62 17.92 14.84L16.66 17.66ZM7.34 6.34C8.12 5.56 8.12 4.3 7.34 3.52C6.56 2.74 5.3 2.74 4.52 3.52C3.74 4.3 3.74 5.56 4.52 6.34C5.3 7.12 6.56 7.12 7.34 6.34Z" />
+					<div class="w-6 h-6 text-primary-400">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-full h-full">
+							<circle cx="12" cy="12" r="10"/>
+							<path d="M12 2v20M2 12h20"/>
+							<circle cx="12" cy="12" r="3" fill="currentColor"/>
 						</svg>
 					</div>
 					<div>
-						<p>Copyright © 2025 UNMS Technologies Corp.</p>
+						<p>Copyright © 2025 Atlas Core.</p>
 						<p>All rights reserved. Terms of Service & Privacy Policy.</p>
 					</div>
 				</div>
 				<div class="bg-gray-200 text-gray-600 px-3 py-1 rounded text-xs font-medium">
-					Status
+					System Status
 				</div>
 			</div>
 		</footer>
